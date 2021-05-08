@@ -1,0 +1,6 @@
+@import "../../index.scss";
+
+.header {
+  @include centered-flex-with-padding(2rem);
+  @include default-shadow;
+}
