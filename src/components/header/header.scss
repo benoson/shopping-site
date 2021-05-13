@@ -1,6 +1,21 @@
 @import "../../index.scss";
 
 .header {
-  @include centered-flex-with-padding(2rem);
+  @include flex-with-padding(2rem, flex-start);
   @include default-shadow;
+}
+
+.header-links {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.header-links > a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: $primary-theme-color;
+  padding: 3px 8px;
+  transition: 0.3s ease;
 }

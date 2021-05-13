@@ -1,20 +1,17 @@
 // variables
 $sharp-text: 400;
+$primary-theme-color: lightseagreen;
 
 // mixins
-@mixin centered-flex-with-padding($padding) {
+@mixin flex-with-padding($padding, $justify-position) {
   display: flex;
-  justify-content: space-between;
+  justify-content: $justify-position;
   align-items: center;
   padding: $padding;
 }
 
 @mixin default-shadow {
   box-shadow: 0px 0px 10px 0px grey;
-}
-
-.sharp {
-  font-weight: $sharp-text;
 }
 
 * {
@@ -35,4 +32,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.sharp {
+  font-weight: $sharp-text;
+}
+
+.main-sections {
+  padding: 3rem;
 }
