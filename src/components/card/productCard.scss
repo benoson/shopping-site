@@ -1,5 +1,14 @@
 .card {
   max-width: 345px;
+  margin: 0 1rem 1rem;
+}
+
+.card:first-of-type {
+  margin-left: 0;
+}
+
+.card:last-of-type {
+  margin-right: 0;
 }
 
 .card-image {

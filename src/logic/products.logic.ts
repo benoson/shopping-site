@@ -14,6 +14,10 @@ const productsLogic = {
             displayedProductsArray.push(displayedProduct);
         }
         return displayedProductsArray;
+    },
+
+    onProductClickBuy: (product: ProductView): void => {
+
     }
 }
 

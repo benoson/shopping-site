@@ -1,8 +1,5 @@
-.table {
-  width: 80%;
-  margin: auto;
-}
+@import "../../index.scss";
 
-.table-container {
-  max-height: 440px;
+.home {
+  @include flex(flex-start, stretch, wrap);
 }

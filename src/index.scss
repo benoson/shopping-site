@@ -3,11 +3,11 @@ $sharp-text: 400;
 $primary-theme-color: lightseagreen;
 
 // mixins
-@mixin flex-with-padding($padding, $justify-position) {
+@mixin flex($justify-position, $align-position, $flex-wrap) {
   display: flex;
   justify-content: $justify-position;
-  align-items: center;
-  padding: $padding;
+  align-items: $align-position;
+  flex-wrap: $flex-wrap;
 }
 
 @mixin default-shadow {

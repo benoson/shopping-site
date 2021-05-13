@@ -1,8 +1,9 @@
 @import "../../index.scss";
 
 .header {
-  @include flex-with-padding(2rem, flex-start);
+  @include flex(flex-start, center, wrap);
   @include default-shadow;
+  padding: 2rem;
 }
 
 .header-links {
